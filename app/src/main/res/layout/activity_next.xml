@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NextActivity">
+
+    <TextView
+        android:id="@+id/textKedua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator App"
+        android:textColor="#880B0B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka 1"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKedua"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="+"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKurang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNumber3"
+        app:layout_constraintVertical_bias="0.557"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnKali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="52dp"
+        android:text="X"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toEndOf="@+id/btnKurang"
+        app:layout_constraintTop_toBottomOf="@+id/textNumber2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnKurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="52dp"
+        android:text="-"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNumber2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnBagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="/"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toEndOf="@+id/btnTambah"
+        app:layout_constraintTop_toBottomOf="@+id/textNumber3"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <EditText
+        android:id="@+id/textNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Angka 2"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/textNumber1"
+        app:layout_constraintVertical_bias="0.125"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/textNumber3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasil"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintTop_toBottomOf="@+id/textNumber2"
+        app:layout_constraintVertical_bias="0.133"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKedua"
+        app:layout_constraintVertical_bias="0.948" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
